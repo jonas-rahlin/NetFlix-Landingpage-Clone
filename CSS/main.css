@@ -1,0 +1,25 @@
+@font-face {
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: rgb(0, 0, 0);
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+
+}
+
+div{
+
+}
+
+
