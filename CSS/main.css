@@ -234,8 +234,9 @@ main{
   padding:1.5rem;
   font-size: 1.6rem;
   border-top:solid 2px black;
+  display:none;
 }
 
 .displayOnOff{
-  display:none;
+  display:block;
 }
