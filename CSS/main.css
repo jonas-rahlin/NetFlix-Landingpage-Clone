@@ -93,15 +93,15 @@ main{
   margin-top:1rem;
 }
 
-#hero-signUp{
+.signUp{
   margin-top:1.5rem;
 }
 
-#hero-signUp p{
+.signUp p{
   font-size:1.2rem;
 }
 
-#hero-signUp .container{
+.signUp .container{
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -109,7 +109,7 @@ main{
   margin-top:1.5rem;
 }
 
-#hero-signUp input{
+.signUp input{
   width:24rem;
   height:3.5rem;
   background-color: rgba(22, 22, 22, 0.900);
@@ -120,12 +120,12 @@ main{
   padding-left: 1rem;
 }
 
-#hero-signUp input::placeholder{
+.signUp input::placeholder{
   font-size: 1rem;
   color:lightgrey;
 }
 
-#hero-signUp button{
+.signUp button{
   width:12rem;
   height:3.5rem;
   margin-left:0.5rem;
@@ -184,7 +184,9 @@ main{
   align-items: center;
   min-height:100vh;
   margin-top:4rem;
-  margin: 4rem 12rem;
+  padding-bottom:4rem;
+  width:100%;
+  border-bottom:8px solid rgb(48, 48, 48);
 }
 
 #faq h2{
@@ -194,6 +196,7 @@ main{
 
 #faqBars-container{
   width:100%;
+  padding: 1rem 12rem;
 }
 
 .faqBar{
@@ -231,8 +234,83 @@ main{
   font-size: 1.6rem;
   border-top:solid 2px black;
   display:none;
+	-webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+footer .container{
+  display:flex;
+  flex-direction: column;
+  padding:4rem 12rem;
+}
+
+footer .container a{
+  color:rgba(255,255,255,0.7);
+  margin:0.5rem 0rem;
+}
+
+#links{
+  height:11rem;
+}
+
+#links a{
+  color:rgba(255,255,255,0.7);
+}
+
+#links ul{
+  height:100%;
+  display:Flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  color:rgba(255,255,255,0.7);
+}
+
+#links li{
+  list-style: none;
+  margin:0.5rem 0rem;
+  text-decoration: underline;
+}
+
+footer select{
+  font-size:0.9rem;
+  height:2rem;
+  border-radius: 5px;
+  width:130px;
+  background-color: rgba(22, 22, 22, 0.900);
+  color:white;
+  padding-left:8px;
+  margin: 0.5rem 0rem;
+}
+
+#companyName{
+  color:rgba(255,255,255,0.7);
+  margin: 0.5rem 0rem;
+}
+
+
+
+
+
+
+
 
 .displayOnOff{
   display:block;
+}
+
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
 }
